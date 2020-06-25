@@ -1,0 +1,19 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* fine reset */
+
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.size{
+  border: 1px solid black;
+  height: 50px;
+  cursor: pointer;
+}
