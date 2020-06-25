@@ -19,11 +19,15 @@ $(document).ready(
             risultato = numero;
             $(clickedDiv).text(numero);
             $(clickedDiv).addClass('yellow')
+            // rimuovo la classe green in caso al click precedente fosse maggiore di 5 e il div verde
+            $(clickedDiv).removeClass('green')
           } //...altrimenti se è maggiore di 5 sarà verde.
             else if (numero > 5) {
               risultato = numero;
               $(clickedDiv).text(numero);
               $(clickedDiv).addClass('green')
+              // rimuovo la classe yellow in caso al click precedente fosse minore o uguale a 5 e il div giallo
+              $(clickedDiv).removeClass('yellow')
             }
         },
         // In caso di errore darà un messaggio alert di errore.
